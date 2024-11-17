@@ -1,13 +1,13 @@
 # The Key Pop Shop 🎶🛒
 
 Proyecto integrador desarrollado como parte del curso de Frontend de Talento Tech, enfocado en la creación de un ecommerce utilizando **HTML** y **CSS**.  
-
+Elegí como temática una tienda de K-pop.
 ---
 
 ## 🖥️ Tecnologías utilizadas
 
 - **HTML5**: Para la estructura del sitio y el uso de etiquetas semánticas como `<header>`, `<nav>`, `<section>`, `<footer>`, etc.
-- **CSS3**: Para los estilos, con uso de **Google Fonts**, **Flexbox** y **Grid** para garantizar un diseño atractivo y responsivo.
+- **CSS**: Para los estilos, con uso de **Google Fonts**, **Flexbox** y **Grid** para garantizar un diseño atractivo y responsivo.
 - **Formspree**: Para la implementación de un formulario de contacto funcional.
 
 ---
@@ -24,7 +24,7 @@ Proyecto integrador desarrollado como parte del curso de Frontend de Talento Tec
 3. **Páginas adicionales**:
    - **Productos**: Muestra los productos disponibles en la tienda.
    - **Nuestra tienda**: Una galería de imágenes que presenta cómo luce la tienda.
-   - **Sobre mí**: Una página con información personal o sobre la inspiración detrás del ecommerce.
+   - **Sobre nosotros**: Una página con información personal o sobre la inspiración detrás del ecommerce.
    - **Contacto**: Un formulario funcional para que los usuarios puedan enviar mensajes.
 
 4. **Formulario funcional**:
