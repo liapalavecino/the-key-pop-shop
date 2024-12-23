@@ -2,47 +2,78 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Key Pop Shop</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
-    <link rel="stylesheet" href="./estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - The Key Pop Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="./estilos.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar container">
-            <a href="./index2.html" class="logo">
-                <img src="./img/logo1.png" alt="Isologotipo de la tienda">
-            </a>
-            <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./shop.html">TIENDA<iconify-icon
-                            icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item"><a href="" class="submenu__link">Lightsticks</a></li>
-                        <li class="submenu__item"><a href="" class="submenu__link">Peluches</a></li>
-                        <li class="submenu__item"><a href="" class="submenu__link">Albumes</a></li>
-                    </ul>
-                </li>
-                <li class="navbar__item"><a class="navbar__link" href="./info.html">SOBRE NOSOTROS</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="./contacto.html">CONTACTO</a></li>
-                <li class="navbar__item"><a class="navbar__cart" href="./carrito.html"><img
-                            src="./img/icons/cart-icon.svg" alt="iconoDeCarrito"></a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar container">
+      <a href="./index2.html" class="logo">
+        <img src="./img/logo1.png" alt="Isologotipo de la tienda">
+      </a>
+      <ul class="navbar__menu">
+        <li class="navbar__item with-submenu">
+          <a class="navbar__link with-icon" href="./shop.html">TIENDA<iconify-icon
+              icon="tabler:chevron-down"></iconify-icon></a>
+          <ul class="submenu">
+            <li class="submenu__item"><a href="" class="submenu__link">Lightsticks</a></li>
+            <li class="submenu__item"><a href="" class="submenu__link">Peluches</a></li>
+            <li class="submenu__item"><a href="" class="submenu__link">Álbumes</a></li>
+          </ul>
+        </li>
+        <li class="navbar__item"><a class="navbar__link" href="./info.html">SOBRE NOSOTROS</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="./contacto.html">CONTACTO</a></li>
+        <li class="navbar__item"><a class="navbar__cart" href="./carrito.html"><img
+              src="./img/icons/cart-icon.svg" alt="iconoDeCarrito"></a></li>
+      </ul>
+    </nav>
+  </header>
 
-
-
-    <footer class="footer">
-        <div class="container">
-          <p>&copy; Todos los derechos e izquierdos reservados - The Key Pop Shop. </p>
+  <main class="main">
+    <section class="productos container">
+      <h1>Nuestros Productos</h1>
+      <div class="grid-productos">
+        <!-- Card Producto 1 -->
+        <div class="card">
+          <img src="./img/lightstick.jpg" alt="Lightstick">
+          <h3>DREAMCATCHER LIGHTSTICK</h3>
+          <p class="descripcion">El accesorio perfecto para cualquier fan.</p>
+          <p class="precio">$10,500</p>
+          <button class="btn-agregar" data-nombre="Lightstick" data-precio="3500">Agregar al Carrito</button>
         </div>
-      </footer>
-    
-      <script src="script.js"></script>
-    </body>
-    </html>
+        <!-- Card Producto 2 -->
+        <div class="card">
+          <img src="./img/peluche.jpg" alt="Peluches de Ateez">
+          <h3>ANITEEZ</h3>
+          <p class="descripcion">Peluches de Ateez ultra suaves.</p>
+          <p class="precio">$2,000</p>
+          <button class="btn-agregar" data-nombre="Peluche" data-precio="2000">Agregar al Carrito</button>
+        </div>
+        <!-- Card Producto 3 -->
+        <div class="card">
+          <img src="./img/album.jpg" alt="Álbum">
+          <h3>BIGBANG "MADE" ALBUM</h3>
+          <p class="descripcion">Hecho por los reyes del K-pop.</p>
+          <p class="precio">$5,000</p>
+          <button class="btn-agregar" data-nombre="Álbum" data-precio="5000">Agregar al Carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Todos los derechos e izquierdos reservados - The Key Pop Shop.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
