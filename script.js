@@ -35,24 +35,30 @@ document.getElementById("vaciar-carrito").addEventListener("click", () => {
   mostrarCarrito();
 });
 
+
+
+
 mostrarCarrito();
 
 // PARA PRODUCTO.HTML
 
-const botonesAgregar = document.querySelectorAll(".btn-agregar");
-
-botonesAgregar.forEach((boton) => {
-  boton.addEventListener("click", (e) => {
-    const producto = {
-      nombre: e.target.dataset.nombre,
-      precio: e.target.dataset.precio,
-    };
-
-    // Guardar en LocalStorage
-    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    carrito.push(producto);
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-
-    alert(`${producto.nombre} ha sido añadido al carrito.`);
+document.addEventListener("DOMContentLoaded", () => {
+    const botonesAgregar = document.querySelectorAll(".btn-agregar");
+  
+    botonesAgregar.forEach((boton) => {
+      boton.addEventListener("click", (e) => {
+        const producto = {
+          nombre: e.target.dataset.nombre,
+          precio: e.target.dataset.precio,
+        };
+  
+        // Guardar en LocalStorage
+        const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        carrito.push(producto);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+  
+        alert(`${producto.nombre} ha sido añadido al carrito.`);
+      });
+    });
   });
-});
+  
