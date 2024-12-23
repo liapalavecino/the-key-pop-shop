@@ -7,7 +7,7 @@ const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 function mostrarCarrito() {
   carritoLista.innerHTML = ""; // Limpiar la lista
   if (carrito.length === 0) {
-    carritoLista.innerHTML = "<p>No hay productos en el carrito.</p>";
+    carritoLista.innerHTML = "<p>No hay productos en el carrito. (Todavía)</p>";
     return;
   }
 

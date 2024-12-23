@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrito de Compras</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Key Pop Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="./estilos.css">
 </head>
+
 <body>
-  <header>
-    <h1>Carrito de Compras</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-    </nav>
-  </header>
-  <main>
-    <ul id="lista-carrito">
-      <!-- Aquí se cargarán los productos dinámicamente -->
-    </ul>
-    <button id="vaciar-carrito">Vaciar Carrito</button>
-  </main>
-  <script src="carrito.js"></script>
+    <header>
+        <nav class="navbar container">
+            <a href="./index2.html" class="logo">
+                <img src="./img/logo1.png" alt="Isologotipo de la tienda">
+            </a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./shop.html">TIENDA<iconify-icon
+                            icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="" class="submenu__link">Lightsticks</a></li>
+                        <li class="submenu__item"><a href="" class="submenu__link">Peluches</a></li>
+                        <li class="submenu__item"><a href="" class="submenu__link">Albumes</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__item"><a class="navbar__link" href="./info.html">SOBRE NOSOTROS</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./contacto.html">CONTACTO</a></li>
+                <li class="navbar__item"><a class="navbar__cart" href="./carrito.html"><img
+                            src="./img/icons/cart-icon.svg" alt="iconoDeCarrito"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <ul id="lista-carrito">
+            <!-- falta todavia: aca deberia verse los productos -->
+        </ul>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </main>
+    <script src="carrito.js"></script>
 </body>
+
 </html>
