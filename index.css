@@ -439,3 +439,28 @@ iconify-icon {
 .btn:hover {
   background-color: #551bcb;
 }
+
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .producto-card {
+    width: 30%;
+    margin: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .producto-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .producto-card {
+      width: 100%;
+    }
+  }
+  
